@@ -25,6 +25,7 @@ public class WindowHandleWithRegularExp {
 		Set<String> windows = driver.getWindowHandles();
 		
 		Iterator<String> itr = windows.iterator();
+		
 		String parentWindow = itr.next();
 		String childWindow = itr.next();
 		driver.switchTo().window(childWindow);
