@@ -17,6 +17,7 @@ public class WindowHandleWithRegularExp {
 		driver.manage().window().maximize();
 		
 		driver.get("https://loginpagePractise/");
+		
 		driver.manage().timeouts().implicitlyWait(6, TimeUnit.SECONDS);
 		driver.findElement(By.cssSelector(".blinkingText")).click();
 		Set<String> windows = driver.getWindowHandles();
