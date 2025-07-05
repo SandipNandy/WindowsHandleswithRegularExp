@@ -27,6 +27,7 @@ public class WindowHandleWithRegularExp {
 		Iterator<String> itr = windows.iterator();
 		
 		String parentWindow = itr.next();
+		
 		String childWindow = itr.next();
 		driver.switchTo().window(childWindow);
 		String ChildWinText=driver.findElement(By.cssSelector(".im-para.red")).getText();
