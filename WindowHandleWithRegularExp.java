@@ -19,6 +19,7 @@ public class WindowHandleWithRegularExp {
 		driver.get("https://loginpagePractise/");
 		
 		driver.manage().timeouts().implicitlyWait(6, TimeUnit.SECONDS);
+		
 		driver.findElement(By.cssSelector(".blinkingText")).click();
 		Set<String> windows = driver.getWindowHandles();
 		Iterator<String> itr = windows.iterator();
