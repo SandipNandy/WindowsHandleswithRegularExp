@@ -23,6 +23,7 @@ public class WindowHandleWithRegularExp {
 		driver.findElement(By.cssSelector(".blinkingText")).click();
 		
 		Set<String> windows = driver.getWindowHandles();
+		
 		Iterator<String> itr = windows.iterator();
 		String parentWindow = itr.next();
 		String childWindow = itr.next();
